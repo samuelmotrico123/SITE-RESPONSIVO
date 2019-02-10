@@ -1,7 +1,6 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    width: 100vw;
     overflow-x: hidden;
 
 
@@ -9,14 +8,12 @@ body{
 .grid{
     display: grid;
     grid-template-columns: repeat(5,minmax(60px,1fr));
-    grid-template-rows:repeat(15,minmax(100px,auto)) ;
+    grid-template-rows:repeat(12,minmax(100px,1fr)) 0.5fr ;
     grid-template-areas:
     "banner banner banner banner banner"
     "banner banner banner banner banner"
     "banner banner banner banner banner"
-    "banner banner banner banner banner"
     "banner banner banner banner banner"    
-    "main main main main main"
     "main main main main main"
     "main main main main main"
     "section section section section section"
@@ -27,14 +24,55 @@ body{
     "chao chao chao chao chao"
     "footer footer footer footer footer"
 }
+.pessoas img{
+    width: 3vw;
+    height: 3vw;
+}
+#topo{
+    margin-bottom: auto ;
+}
+#EMAIL{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+input{
+    border-width: 0;
+    padding: 0;
+    border-radius: 5px 0 0 5px;
+    height: 2.5em;
+    font-size: 1em;
+}
+button{
+    border-radius: 0px 5px 5px 0;
+    height: 2.5em;
+    border: greenyellow;
+    background-color: greenyellow;
+    color: white;
+    width: 4em;
+    padding:0;
+    font-size: 1em;
+}
 .banner{
-
+    width: 100vw;
+    height: 100%;
     grid-area: banner;
-    background-image: url(banner.png);
+    background-image: url(banner.png) ;
+    background-size: 100vw 100% ;
 }
 main{
     grid-area: main;
     background-color: white;
+}
+.chao p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#frase{
+    margin: 0 5em 0 5em;
+    text-align: center;
 }
 section{
     width: 70vw;
@@ -75,15 +113,32 @@ footer a{
     justify-content: space-evenly;
 }
 .video{
-    height: 200px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 section{
+    width: 90vw;
+    padding: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 #youtube{
     margin: 0px 40px;
-    background-color: white;
+}
+#youtube img{
+    width:100%;
+    height: 100%;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h5{
+    margin: 0.5em;
 }
