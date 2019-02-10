@@ -8,7 +8,7 @@ body{
 .grid{
     display: grid;
     grid-template-columns: repeat(5,minmax(60px,1fr));
-    grid-template-rows: 0.5fr repeat(2,minmax(100px,350px)) repeat(2,minmax(100px,200px)) repeat(2,minmax(100px,200px))repeat(2,minmax(100px,250px)) 1.5fr ;
+    grid-template-rows: 0.5fr repeat(2,minmax(100px,350px)) repeat(2,minmax(100px,200px)) repeat(2,minmax(100px,200px))repeat(2,minmax(100px,250px)) 100px ;
     grid-template-areas:
     "verde verde verde verde verde"
     "banner banner banner banner banner"
@@ -39,12 +39,16 @@ span{
     margin-bottom: auto ;
     max-width: 25%;
 }
+#topo p{
+    text-align: left;
+    color: rgb(121, 120, 120);
+}
 #EMAIL{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    width: 110%
+    width: 100%
 }
 
 input{
