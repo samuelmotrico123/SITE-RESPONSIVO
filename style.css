@@ -8,35 +8,45 @@ body{
 .grid{
     display: grid;
     grid-template-columns: repeat(5,minmax(60px,1fr));
-    grid-template-rows:repeat(12,minmax(100px,1fr)) 0.5fr ;
+    grid-template-rows: 0.5fr repeat(2,minmax(100px,350px)) repeat(2,minmax(100px,200px)) repeat(2,minmax(100px,200px))repeat(2,minmax(100px,250px)) 1.5fr ;
     grid-template-areas:
+    "verde verde verde verde verde"
     "banner banner banner banner banner"
-    "banner banner banner banner banner"
-    "banner banner banner banner banner"
-    "banner banner banner banner banner"    
+    "banner banner banner banner banner"   
     "main main main main main"
     "main main main main main"
     "section section section section section"
     "section section section section section"
-    "section section section section section"
-    "chao chao chao chao chao"
     "chao chao chao chao chao"
     "chao chao chao chao chao"
     "footer footer footer footer footer"
+}
+
+.verde{
+    grid-area: verde;
+    background-color: #2acb6d;
 }
 .pessoas img{
     width: 3vw;
     height: 3vw;
 }
+span{
+    color: #2acb6d;
+    border-radius: 100px;
+    font-size: 5em;
+}
 #topo{
     margin-bottom: auto ;
+    max-width: 25%;
 }
 #EMAIL{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: left;
+    width: 110%
 }
+
 input{
     border-width: 0;
     padding: 0;
@@ -47,38 +57,108 @@ input{
 button{
     border-radius: 0px 5px 5px 0;
     height: 2.5em;
-    border: greenyellow;
-    background-color: greenyellow;
+    border: #2acb6d;
+    background-color: #2acb6d;
     color: white;
-    width: 4em;
+    width: 6em;
     padding:0;
     font-size: 1em;
 }
+.imagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height:100%;  
+    margin:0em 5em 0 1.5em; 
+}
+.imagem img{
+    display: flex;
+    align-items: baseline;
+
+    height: auto;
+}
+.texto{    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 700px;
+    margin-bottom: 16%;
+    margin: 0 1.5em 0 6em;
+    
+
+}
+.LOGO{
+    display: flex;
+    height: 10em;
+    flex-direction: row;
+    align-items: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h1{
+    font-family: 'Pacifico';
+    color: white;
+    font-size: 4em;
+    font-weight: lighter;
+}
 .banner{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
     width: 100vw;
-    height: 100%;
+    max-height: 700px;
     grid-area: banner;
     background-image: url(banner.png) ;
     background-size: 100vw 100% ;
 }
+.plataformas{
+    height: 3em;
+    margin: 0.5em 0.25em 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:3em;
+    padding:0;
+    border-radius: 100%;
+    background-color: rgba(0,0,0, 50%)
+}
+
 main{
     grid-area: main;
     background-color: white;
+    display: flex;
+    
+}
+.partes{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.ICONES{
+    display: flex;
+    background-color: #2acb6d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+
+
 }
 .chao p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#frase{
-    margin: 0 5em 0 5em;
-    text-align: center;
-}
+
 section{
     width: 70vw;
     padding: 15vw;
     grid-area: section;
-    background-color: lightgrey;
+    background-color: rgb(227, 227, 227);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,7 +174,7 @@ section{
 }
 footer{
     grid-area: footer;
-    background-color: lightgrey;
+    background-color: rgb(227, 227, 227);
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -113,8 +193,8 @@ footer a{
     justify-content: space-evenly;
 }
 .video{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 section{
     width: 90vw;
@@ -124,11 +204,14 @@ section{
     justify-content: space-evenly;
 }
 #youtube{
-    margin: 0px 40px;
+    margin: 0px 20px;
 }
 #youtube img{
     width:100%;
     height: 100%;
+}
+h4{
+    margin: 1em;
 }
 h3 {
     display: block;
@@ -142,3 +225,81 @@ h3 {
 h5{
     margin: 0.5em;
 }
+.paragrafos{
+    text-align: center;
+    color: rgb(121, 120, 120);
+    margin: 0;
+}
+
+@media(max-width:992px ){
+    body{
+        max-width: 100vw;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5,20vw);
+        grid-template-rows: 0.1fr 2.5fr repeat(9,1fr) ;
+        grid-template-areas:
+        "verde verde verde verde verde"
+        "banner banner banner banner banner"  
+        "main main main main main"
+        "main main main main main"
+        "main main main main main"
+        "section section section section section"
+        "section section section section section"
+        "section section section section section"
+        "chao chao chao chao chao"
+        "chao chao chao chao chao"
+        "footer footer footer footer footer"
+
+    }
+    .banner{
+        background-image: none;
+        background-color: lightgrey;
+        max-height: 100vh;
+    }
+    .imagem img{
+        display: none;
+    }
+    .texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+    .texto p{
+        text-align: center;
+    }
+    .imagem{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .plataformas{
+        background-color: #2acb6d;
+    }
+    section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .video{
+        width: 100vw;
+        margin: 1em 0;
+    }
+    #topo{
+        max-width: 90vw;
+        margin-bottom:  1em;
+    }
+    #EMAIL{
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+    }
+}    
