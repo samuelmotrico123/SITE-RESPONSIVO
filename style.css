@@ -36,9 +36,9 @@ body{
     width: 3vw;
     height: 3vw;
 }
-span{
+ span{
     color: #2acb6d;
-    border-radius: 0px 5px;
+    border-radius: 10px;
     font-size: 5em;
 }
 #topo{
@@ -273,9 +273,9 @@ h5{
     .grid{
         display: grid;
         grid-template-columns: repeat(5,20vw);
-        grid-template-rows: 0.1fr 2.5fr repeat(9,1fr) ;
+        grid-template-rows: 2.5fr repeat(9,1fr) ;
         grid-template-areas:
-        "verde verde verde verde verde"
+        
         "banner banner banner banner banner"  
         "main main main main main"
         "main main main main main"
