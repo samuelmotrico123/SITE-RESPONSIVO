@@ -1,5 +1,5 @@
 .topline {
-    background-color: #2acb6d;
+    background-color:#2ecb70;
     width: 100vw;
     height: 10px;
     
@@ -38,8 +38,8 @@ body{
 }
  span{
     color: #2acb6d;
-    border-radius: 10px;
-    font-size: 5em;
+    border-radius: 1px;
+    font-size: 1em;
 }
 #topo{
     margin-bottom: auto ;
