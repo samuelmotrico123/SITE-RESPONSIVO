@@ -1,5 +1,5 @@
 .topline {
-    background-color: #2acb6d;
+    background-color:#2ecb70;
     width: 100vw;
     height: 10px;
     
@@ -36,10 +36,12 @@ body{
     width: 3vw;
     height: 3vw;
 }
-span{
+ span{
     color: #2acb6d;
     border-radius: 0px 5px 10px;
     font-size: 5em;
+    border-radius: 1px;
+    font-size: 1em;
 }
 #topo{
     margin-bottom: auto ;
@@ -273,9 +275,9 @@ h5{
     .grid{
         display: grid;
         grid-template-columns: repeat(5,20vw);
-        grid-template-rows: 0.1fr 2.5fr repeat(9,1fr) ;
+        grid-template-rows: 2.5fr repeat(9,1fr) ;
         grid-template-areas:
-        "verde verde verde verde verde"
+        
         "banner banner banner banner banner"  
         "main main main main main"
         "main main main main main"
